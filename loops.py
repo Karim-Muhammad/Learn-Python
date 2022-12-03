@@ -164,3 +164,7 @@ print(count_words("Hi, My name is Karim, Bye"));
 print(count_words_by_manual("Hi, My name is Karim, Bye"));
 
 # 4: 07: 40
+
+# We can use Range function to loop through something by times
+# range(stop)
+# range(start,stop, step)

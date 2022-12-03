@@ -107,3 +107,7 @@ print(list(reversed(names.values())));
 print(list(reversed(names.items())));
 
 # before this version, you had to take dict out of dictionary and put in array to order it, or search, sort, <algorithm>
+
+
+# How to Merge Multiple Dict
+# mergedDict = {**dict1, **dict2};
