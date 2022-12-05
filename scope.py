@@ -72,3 +72,36 @@ print(min([1,2,3,4,5,5,-1]))
 # but there is one way to use builtin function
 # 
 print(builtins.min([1,2,3,4,-1]))
+
+
+# Enclosing
+# when you has nested function, or nested block within function, or another block
+
+
+def outer():
+     x = "outer x";
+     def inner():
+          # nonlocal x;
+          x = "inner x";
+
+          print(x); # [L]EGB
+          # if we commented x = "inner x", will use L[E]GB
+          # this means -> it will look up it in outer block
+
+          # if i want re-assign "x" variable, not create new brand?
+          # i should using global?
+          # not, it will change the global variable which its name "x"
+          
+          # We should use "nonlocal" to access enclosing variables
+  
+     inner();
+     print(x); # [L]EGB
+
+outer();
+
+#nonlocal is used often unlike global
+# because it is useful to use for change state of closure, and decorators
+
+# Wrap
+# python will look up if he finds in Local -> Enclosing -> Global if doesn't found, will see in built=ins, if doesn't found as well
+# it will throw an error
