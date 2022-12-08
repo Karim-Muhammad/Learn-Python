@@ -1,0 +1,5 @@
+INFO:root:Running 'sum' with arguments (1, 2)
+INFO:root:Running 'sum' with arguments (1, 2)
+INFO:root:Running 'sum' with arguments (1, 2)
+INFO:root:Running 'sub' with arguments (9, 3)
+INFO:root:Running 'sum' with arguments (1, 2, 3, 4, 5)
