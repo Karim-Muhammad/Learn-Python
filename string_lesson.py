@@ -62,6 +62,18 @@ print("My name is {0}".format("Karim"))
 # format with %
 print("My age is %d %s" % (20, "old")); # like c-programming
 
+person = {
+     'name':"karim",
+     'level': 3,
+}
+langs = ["HTML", "CSS", "JS", "Django", "PyQT"];
+print("my name is {}, my level in college is {}".format(person["name"], person["level"]))
+print("my name is {0[name]}, my level in college is {1[level]}".format(person, person))
+
+# enhanced
+print("my name is {0[name]}, my level in college is {0[level]}".format(person))
+print("my name is {0.name}, my level in college is {0.level}".format(person))
+print("Skill 1 {0[0]}, Skill 2 {0[1]}".format(langs))
 # ---------------------------------------------------------------------------- #
 #                                    Access                                    #
 # ---------------------------------------------------------------------------- #
